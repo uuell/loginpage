@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>DBMS</title>
+  </head>
+
+  <body>
+    <h1>LOGIN</h1>
+    <form class="form-box" action="/signIn" method="post">
+      <div class="login-container" id="login">
+        <!-- USERNAME -->
+        <div class="input-box">
+          <input
+            type="text"
+            name="name"
+            class="input-field"
+            placeholder="Username"
+          />
+          <i class="bx bx-user"></i>
+        </div>
+        <!-- PASSWORD -->
+        <div class="input-box">
+          <input
+            type="password"
+            name="password"
+            class="input-field"
+            placeholder="Password"
+          />
+          <i class="bx bx-lock-alt"></i>
+        </div>
+        <!-- BUTTONS -->
+        <div class="input-box">
+          <button type="submit" class="btn white-btn" id="loginBtn">
+            Sign In
+          </button>
+        </div>
+
+        <!-- Sign in & Sign up Page -->
+        <div class="two-col">
+          <div class="one">
+            <span>Don't have an account? <a href="/signUp">Sign Up</a></span>
+          </div>
+          <div class="two">
+            <span>Already have an account? <a href="/">Sign in</a></span>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Frontend functionality -->
+    <!-- <script src="../Public/script.js"></script> -->
+  </body>
+</html>
